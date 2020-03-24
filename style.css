@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/* Lato fontから持ってくる */
+body{
+  overflow-x:hidden;
+  /* 右側にoverflowした部分は隠す */
+  font-family: 'Lato', sans-serif;
+  /* Lato fontから持ってくる */
+  color:#505962;
+}
+.offset:before{
+  display: block;
+  content:"";
+  height:4rem;
+  /* background-color: rebeccapurple; */
+  margin-top:-4rem;
+  /* なんのためにあるのだ？ */
+}
+
+
+/* Navigation */
+.navbar{
+  text-transform: uppercase;
+  font-weight:700;
+  font-size:.9rem;
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,0.6)!important;
+}
+.navbar-brand img{
+  height:2rem;
+}
+.navbar-nav li{
+  padding-right:.7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  padding-top:.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color:#1ebba3;
+}
+
+/* Landing Page */
+.carousel-inner img{
+  width:100%;
+  height:100%
+}
+.carousel-caption{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+.carousel-caption h1{
+  font-size:300%;
+  text-transform:uppercase;
+  /* 大文字にする */
+  text-shadow:1px 1px 15px #000;
+  /* 右、上、ぼかし */
+}
+.carousel-caption h3{
+  font-size:200%;
+  font-weight:500;
+  text-shadow:1px 1px 10px #000;
+  padding-bottom:1rem;
+}
+/* .btn-primary{
+  background-color: #6648b1;
+  border:1px solid #563d7c;
+} */
+/* .btn-primary:hover{
+  background-color: #563d7c;
+  border:1px solid #563d7c;
+} */
+
+
+/*============= ABOUT SECTION =============*/
+.about-me img{
+  width:100%;
+  border-radius: 50%;
+}
+
+.jumbotron{
+  margin-bottom: 0;
+  padding:2rem 0 3.5rem 0;
+  border-radius: 0;
+  background-color: white;
+}
+h3.heading{
+  font-size:1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  width:3rem;
+  height:.2rem;
+  background-color: #1ebba3;
+  margin:0 auto 2rem;
+}
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.about-text{
+  text-align: justify;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+blockquote svg.svg-inline--fa{
+  color:#1ebba3;
+  margin:1rem ;
+}
+
+
+/* Services Section */
+.fixed{
+  background-image: url(img/end-route-66.jpg);
+  z-index:-1;
+}
+.dark{
+  background-color: rgba(0,0,0,0.75);
+  color:white;
+  padding:7rem 2rem;
+}
+.fixed-background h3{
+ margin-bottom: 2rem;
+}
+.fixed-background p{
+  margin-top: 1.5rem;
+}
+.tag:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+.jumbotron{
+  margin-bottom: 0;
+  padding:2rem 0 3.5rem 0;
+  border-radius: 0;
+  background-color: white;
+}
+h3.heading{
+  font-size:1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.9rem;
+}
+.heading-underline{
+  width:3rem;
+  height:.2rem;
+  background-color: #1ebba3;
+  margin:0 auto 2rem;
+}
+.feature svg.svg-inline--fa{
+    /* こういう書き方 */
+  color:#1ebba3;
+}
+.feature h3{
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  padding-bottom: .4rem;
+}
+.feature p{
+  font-size: 1.1rem;
+}
+
+
+
+
+/* Clients Section */
+/* .clients img{
+  width:100%;
+  border-radius: 50%;
+} */
+/* .clients-hr{
+  border-top: .05rem solid #1ebba3;
+} */
+
+
+/* Contact Section */
+footer{
+  background-color: #40474e;
+  color:white;
+  padding:2rem 0 2rem ;
+  margin-top: 1rem;
+  text-align: center;
+}
+footer img{
+  height:3rem;
+  margin:1.5rem 0;
+}
+footer a{
+  color:white;
+}
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+  margin:1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+  color:#1ebba3!important;
+}
+hr.socket{
+  width:100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+}
+
+.formcontent{
+  margin-top:80px;
+  margin-bottom: 50px;
+}
+.formtit{
+  font-size: 10px;
+}
+
+.contact_form{
+  background-color:transparent ;
+  height:20px;
+  color:white;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 5px;
+}
+.text_form{
+  background-color:transparent ;
+  height:100px;
+  color:white;
+  border-bottom: 1px solid white;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  margin-bottom: 5px;
+}
+.btn_form{
+  background-color:transparent ;
+  color:white;
+  border: 1px solid white;
+  margin-bottom: 5px;
+  line-height: 100%;
+}
+.btn_form:hover{
+  background-color: white;
+  color:black;
+  cursor: pointer;
+}
+
+
+
+/* Media Quaries */
+@media (max-width: 575px){
+  .slide-text{
+    display: none;
+  }
+  .carousel-caption a{
+    display: none;
+  }
+}
+@media (max-width: 767px){
+  .carousel-inner img{
+    width:100%;
+    height:100%;
+  }
+  .carousel-caption{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  .carousel-caption h1{
+    font-size:200%;
+    text-transform:uppercase;
+    /* 大文字にする */
+    text-shadow:1px 1px 15px #000;
+    /* 右、上、ぼかし */
+  }
+  .carousel-caption h3{
+    font-size:100%;
+    font-weight:500;
+    text-shadow:1px 1px 10px #000;
+    padding-bottom:1rem;
+  }
+  .slide-text{
+    display: none;
+  }
+
+/* about */
+  .idea-box{
+    text-align: center;
+  }
+  .about-me img{
+    width:200px;
+    border-radius: 50%;
+  }
+  .jumbotron{
+    margin-bottom: 0;
+    padding:2rem 0 1rem 0;
+    border-radius: 0;
+    background-color: white;
+  }
+  h3.heading{
+    font-size:1.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+  }
+  .heading-underline{
+    width:3rem;
+    height:.2rem;
+    margin:0 auto 0;
+  }
+  .narrow {
+    width: 75%;
+    margin: .5rem auto;
+    padding-top: 2rem;
+  }
+  .about-text{
+    font-size:14px;
+  }
+
+  /* services */
+  .fixed-background p{
+    font-size: 16px;
+  }
+  .dark{
+    padding:3rem 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner img{
+    height:500px;
+  }
+}
+
+@media (max-width: 767px){
+  /* .caption h1{
+    font-size:2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom:.5rem;
+  } */
+  /* .caption h3{
+    font-size:1.2rem;
+    padding-bottom:1.2rem;
+  } */
+  /* .btn-lg{
+    padding:.5rem 1rem;
+    font-size:1rem;
+  } */
+  /* .narrow h1 {
+    font-size: 1.5rem;
+  } */
+  /* .clients img{
+    width:50%;
+    display:block;
+    margin:0 auto;
+  } */
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
